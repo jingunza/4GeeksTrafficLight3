@@ -13,13 +13,13 @@ const App = () => {
     
     /*funciones para el manejo del clic*/
     const handleClic0 = () => {
-        setLightsOn(0);
+        setLightsOn('red');
     };
     const handleClic1 = () => {
-        setLightsOn(1);
+        setLightsOn('yellow');
     };
     const handleClic2 = () => {
-        setLightsOn(2);
+        setLightsOn('green');
     };
     /*---------- HTML---------------- */
     return (
@@ -32,9 +32,9 @@ const App = () => {
                     handleClic0={handleClic0}
                     handleClic1={handleClic1}
                     handleClic2={handleClic2}
-                    alto={(lightsOn==0)? "alto-on" : "alto"}
-                    precaucion={(lightsOn==1) ? "precaucion-on" : "precaucion"}
-                    pase={(lightsOn==2) ? "pase-on" : "pase"}
+                    alto={(lightsOn=='red')? "alto-on" : "alto"}
+                    precaucion={(lightsOn=='yellow') ? "precaucion-on" : "precaucion"}
+                    pase={(lightsOn=='green') ? "pase-on" : "pase"}
                 />
             </div>
         </div>
