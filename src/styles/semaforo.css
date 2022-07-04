@@ -6,7 +6,54 @@
     border-radius: 3px;
 }
 
-#poste {
-    width: 15px;
-    height: 100px;
+.alto {
+    border-radius: 50%;
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
+    justify-self: center;
+}
+
+.alto-on {
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 50px white;
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
+}
+
+.precaucion {
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
+}
+
+.precaucion-on {
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    box-shadow: 0 0 50px white;
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
+}
+
+.pase {
+    border-radius: 50%;
+    background-color: rgb(0,255,0);
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
+}
+
+.pase-on {
+    border-radius: 50%;
+    background-color: rgb(0,255,0);
+    box-shadow: 0 0 50px white;
+    width: 90px;
+    height: 90px;
+    margin: 3px 0 3px 0;
 }
