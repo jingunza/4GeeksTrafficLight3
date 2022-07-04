@@ -4,15 +4,17 @@ import '../../styles/semaforo.css';
 import Foco from './foco.jsx';
 
 const TrafficLight = () => {
-    const [lightsOn, setLightsOn] = useState('');
-    const handleClic = (color) => {setLightsOn(color)};
+    /*----------useState------------------------------------*/
+    const [lightsOn, setLightsOn] = useState(0);
+    
+    /*---------HTML-----------------------------------------*/
     return (
     <div className="container col-3">
         <div className="row d-flex justify-content-center">
             <div id="semaforo" className="col-3 bg-dark justify-content-center">
-                <Foco clique={handleClic('red')}/**/ clase={(lightsOn=='red') ? 'alto-on' : 'alto'} />
-                <Foco clique={handleClic('yellow')}/**/ clase={(lightsOn=='yellow') ? 'precaucion-on' : 'precaucion'} />
-                <Foco clique={handleClic('green')}/**/ clase={(lightsOn=='green') ? 'pase-on' : 'pase'} />
+                <Foco clique={()=>setLightsOn('red')} color="red" estado={(lightsOn=='red')? "active" : "inactive"} />
+                <Foco clique={()=>setLightsOn('yellow')} color="yellow" estado={(lightsOn=='yellow')? "active" : "inactive"} />
+                <Foco clique={()=>setLightsOn('green')} color="green" estado={(lightsOn=='green')? "active" : "inactive"} />
             </div>
         </div>
     </div>
